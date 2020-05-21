@@ -13,6 +13,7 @@
 		0770EA2924765A64006F4A31 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770EA2824765A64006F4A31 /* PostImageCell.swift */; };
 		0770EA2B24766241006F4A31 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770EA2A24766241006F4A31 /* PostListView.swift */; };
 		0770EA2D24766970006F4A31 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770EA2C24766970006F4A31 /* PostDetailView.swift */; };
+		0770EA2F247682FF006F4A31 /* HomeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770EA2E247682FF006F4A31 /* HomeNavigationBar.swift */; };
 		07F5ED9E247610F60076C77E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5ED9D247610F60076C77E /* AppDelegate.swift */; };
 		07F5EDA0247610F60076C77E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5ED9F247610F60076C77E /* SceneDelegate.swift */; };
 		07F5EDA2247610F60076C77E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5EDA1247610F60076C77E /* ContentView.swift */; };
@@ -112,6 +113,7 @@
 		0770EA2824765A64006F4A31 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		0770EA2A24766241006F4A31 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		0770EA2C24766970006F4A31 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		0770EA2E247682FF006F4A31 /* HomeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationBar.swift; sourceTree = "<group>"; };
 		07F5ED9A247610F60076C77E /* WeiBoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F5ED9D247610F60076C77E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07F5ED9F247610F60076C77E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				07F5EDA1247610F60076C77E /* ContentView.swift */,
 				07F5EE58247613B60076C77E /* PostCell.swift */,
 				0770EA2A24766241006F4A31 /* PostListView.swift */,
+				0770EA2E247682FF006F4A31 /* HomeNavigationBar.swift */,
 				0770EA2C24766970006F4A31 /* PostDetailView.swift */,
 				0770EA2824765A64006F4A31 /* PostImageCell.swift */,
 				0770EA262476568C006F4A31 /* PostCellToolbarButton.swift */,
@@ -514,6 +517,7 @@
 				0770EA272476568C006F4A31 /* PostCellToolbarButton.swift in Sources */,
 				0770EA2524764AF6006F4A31 /* Post.swift in Sources */,
 				07F5EE59247613B60076C77E /* PostCell.swift in Sources */,
+				0770EA2F247682FF006F4A31 /* HomeNavigationBar.swift in Sources */,
 				0770EA23247623B4006F4A31 /* PostVIPBadge.swift in Sources */,
 				0770EA2B24766241006F4A31 /* PostListView.swift in Sources */,
 				0770EA2924765A64006F4A31 /* PostImageCell.swift in Sources */,
