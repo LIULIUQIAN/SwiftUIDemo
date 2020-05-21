@@ -16,6 +16,10 @@ struct PostCell: View {
                 .resizable()
                 .frame(width: 50, height: 50)
                 .clipShape(Circle())
+                .overlay(
+                  PostVIPBadge()
+                    .offset(x: 16, y: 16))
+               
             VStack(alignment:.leading, spacing: 5){
                 Text("昵称")
                     .font(Font.system(size: 16))
