@@ -77,7 +77,14 @@ struct PostCell: View {
                 }
                 Spacer()
                 PostCellToolbarButton(image: post.isLiked ? "heart.fill" : "heart", text: post.likeCountText, color: post.isLiked ? .red : .black){
-                    print("==========2")
+                    if post.isLiked {
+                        post.isLiked = false
+                        post.likeCount -= 1
+                    } else {
+                        post.isLiked = true
+                        post.likeCount += 1
+                    }
+                    self.userData.update(post)
                 }
                 Spacer()
             }
