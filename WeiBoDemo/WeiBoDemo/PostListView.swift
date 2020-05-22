@@ -16,12 +16,11 @@ struct PostListView: View {
     var body: some View {
          List{
             ForEach(userData.postList(for:category).list){ post in
-                ZStack{
+                ZStack {
                     PostCell(post: post)
-                    NavigationLink(destination: PostDetailView()){
+                    NavigationLink(destination: PostDetailView(post: post)){
                         EmptyView()
-                    }
-                    .hidden()
+                    }.hidden()
                 }
                 .listRowInsets(EdgeInsets())
             }

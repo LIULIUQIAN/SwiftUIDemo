@@ -37,7 +37,7 @@ struct PostCell: View {
                 if !post.isFollowed {
                     Spacer()
                     Button(action: {
-                        print("button click")
+                        
                     }) {
                         Text("关注")
                             .font(.system(size: 14))

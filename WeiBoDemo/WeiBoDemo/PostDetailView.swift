@@ -9,10 +9,11 @@
 import SwiftUI
 
 struct PostDetailView: View {
+    let post: Post
+    
     var body: some View {
-        let list = loadPostListData("PostListData_recommend_1.json").list
-        return List {
-            PostCell(post: list[0])
+        List {
+            PostCell(post: post)
             .listRowInsets(EdgeInsets())
             ForEach(1...20,id: \.self){ i in
                 Text("评论\(i)")
@@ -25,6 +26,7 @@ struct PostDetailView: View {
 
 struct PostDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PostDetailView()
+        let userData = UserData()
+        return PostDetailView(post: userData.recommedPostList.list[0]).environmentObject(userData)
     }
 }
