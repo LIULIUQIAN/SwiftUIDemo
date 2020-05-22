@@ -15,6 +15,7 @@
 		0770EA2D24766970006F4A31 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770EA2C24766970006F4A31 /* PostDetailView.swift */; };
 		0770EA2F247682FF006F4A31 /* HomeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770EA2E247682FF006F4A31 /* HomeNavigationBar.swift */; };
 		07A8522024776B2E0052A9EA /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8521F24776B2E0052A9EA /* HScrollViewController.swift */; };
+		07A85222247778530052A9EA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A85221247778530052A9EA /* UserData.swift */; };
 		07F5ED9E247610F60076C77E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5ED9D247610F60076C77E /* AppDelegate.swift */; };
 		07F5EDA0247610F60076C77E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5ED9F247610F60076C77E /* SceneDelegate.swift */; };
 		07F5EDA2247610F60076C77E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5EDA1247610F60076C77E /* ContentView.swift */; };
@@ -116,6 +117,7 @@
 		0770EA2C24766970006F4A31 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		0770EA2E247682FF006F4A31 /* HomeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationBar.swift; sourceTree = "<group>"; };
 		07A8521F24776B2E0052A9EA /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
+		07A85221247778530052A9EA /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		07F5ED9A247610F60076C77E /* WeiBoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F5ED9D247610F60076C77E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07F5ED9F247610F60076C77E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				0770EA2824765A64006F4A31 /* PostImageCell.swift */,
 				0770EA262476568C006F4A31 /* PostCellToolbarButton.swift */,
 				0770EA22247623B4006F4A31 /* PostVIPBadge.swift */,
+				07A85221247778530052A9EA /* UserData.swift */,
 				07F5EDA3247610F90076C77E /* Assets.xcassets */,
 				07F5EDA8247610F90076C77E /* LaunchScreen.storyboard */,
 				07F5EDAB247610F90076C77E /* Info.plist */,
@@ -513,6 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A85222247778530052A9EA /* UserData.swift in Sources */,
 				07F5ED9E247610F60076C77E /* AppDelegate.swift in Sources */,
 				0770EA2D24766970006F4A31 /* PostDetailView.swift in Sources */,
 				07F5EDA0247610F60076C77E /* SceneDelegate.swift in Sources */,

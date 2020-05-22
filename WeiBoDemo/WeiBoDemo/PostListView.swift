@@ -9,11 +9,13 @@
 import SwiftUI
 
 struct PostListView: View {
+    
+    let category: PostListCategory
+    @EnvironmentObject var userData: UserData
  
     var body: some View {
-        let list = loadPostListData("PostListData_recommend_1.json").list
-        return List{
-            ForEach(list){ post in
+         List{
+            ForEach(userData.postList(for:category).list){ post in
                 ZStack{
                     PostCell(post: post)
                     NavigationLink(destination: PostDetailView()){
@@ -30,6 +32,11 @@ struct PostListView: View {
 
 struct PostListView_Previews: PreviewProvider {
     static var previews: some View {
-        PostListView()
+        NavigationView {
+            PostListView(category: .recommend)
+                .environmentObject(UserData())
+                .navigationBarTitle("Title")
+                .navigationBarHidden(true)
+        }
     }
 }

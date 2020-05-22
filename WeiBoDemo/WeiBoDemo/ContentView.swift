@@ -22,11 +22,13 @@ struct ContentView: View {
             
             GeometryReader{ geometry in
                 HScrollViewController(pageWidth: geometry.size.width,
-                                      contentSize: CGSize(width: geometry.size.width * 2, height: geometry.size.height), leftPercent: self.$leftPercent){
+                                      contentSize: CGSize(width: geometry.size.width * 2,height: geometry.size.height), leftPercent: self.$leftPercent){
                                         
                                         HStack(spacing: 0){
-                                            PostListView()
-                                            PostListView()
+                                            PostListView(category: .recommend)
+                                                .frame(width: geometry.size.width)
+                                            PostListView(category: .hot)
+                                            .frame(width: geometry.size.width)
                                         }
                 }
             }
