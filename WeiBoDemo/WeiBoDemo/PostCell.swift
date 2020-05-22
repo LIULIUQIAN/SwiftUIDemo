@@ -11,8 +11,17 @@ import SwiftUI
 struct PostCell: View {
     let post: Post
     
+    @EnvironmentObject var userData : UserData
+    
+    var bindingPost: Post {
+        userData.post(forId: post.id)!
+    }
+    
     var body: some View {
-        VStack(alignment: .leading, spacing:10){
+        
+        var post = bindingPost
+        
+        return VStack(alignment: .leading, spacing:10){
             HStack(spacing:10){
                 
                 post.avatarImage
@@ -37,7 +46,8 @@ struct PostCell: View {
                 if !post.isFollowed {
                     Spacer()
                     Button(action: {
-                        
+                        post.isFollowed = true
+                        self.userData.update(post)
                     }) {
                         Text("关注")
                             .font(.system(size: 14))
