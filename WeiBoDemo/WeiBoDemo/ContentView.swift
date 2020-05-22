@@ -10,7 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView{
+            PostListView()
+                
+                .navigationBarItems(leading: HomeNavigationBar(leftPercent: 0))
+            .navigationBarTitle("首页",displayMode: .inline)
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
